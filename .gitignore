@@ -25,9 +25,8 @@ bin/
 
 ### IDE ###
 .vscode/
-.idea/
+
 
 ### Mac OS ###
 .DS_Store
 
-Ingineria sistemelor.iml
