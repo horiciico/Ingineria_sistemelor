@@ -13,11 +13,13 @@ public class Student
         this.formatieDeStudiu=formatieDeStudiu;
     }
 
-    public void AfisareStudenti()
+    public String toString()
     {
-        System.out.println("Nume: " + this.nume);
-        System.out.println("Prenume " + this.prenume);
-        System.out.println("Numar matricol: " + this.numarMatricol);
-        System.out.println("Grupa : " + this.formatieDeStudiu);
+       return
+               "Nume: " + nume + "\n" +
+                       "Prenume: " + prenume + "\n" +
+                       "Numar matricol: " + numarMatricol + "\n" +
+                       "Formatie de studiu: " + formatieDeStudiu + "\n";
+
     }
 }
