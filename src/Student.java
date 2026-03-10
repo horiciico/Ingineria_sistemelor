@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Student
 {
     private int numarMatricol;
@@ -21,5 +23,15 @@ public class Student
                        "Numar matricol: " + numarMatricol + "\n" +
                        "Formatie de studiu: " + formatieDeStudiu + "\n";
 
+    }
+
+    public  boolean cautaStudent(List<Student> list)
+    {
+        for(Student i:list)
+        {
+            if (this.nume.equals(i.nume) && this.prenume.equals(i.prenume) && this.formatieDeStudiu.equals(i.formatieDeStudiu))
+                return true;
+        }
+        return false;
     }
 }
